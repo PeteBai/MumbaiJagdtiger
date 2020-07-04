@@ -17,17 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class CompPriceController {
     @Autowired
     private CompPriceService cps;
-    @Autowired
-    private CompDescService cds;
-    @RequestMapping(value="/company/getCompanyAvgPrice")
-    public Map getCAPMsg() throws Exception
+    @RequestMapping(value="/flight/getTotalPrice")
+    public List<CompPriceBean> getCAPMsg() throws Exception
     {
         List<CompPriceBean> cpbs = cps.queryAllCP();
-        List<CompDescBean> cdbs = cds.queryAllCD();
-        Map m = new HashMap();
-        m.put("CompPriceInfo", cpbs);
-        m.put("CompDesc", cdbs);
-        return m;
+        return cpbs;
     }
     @RequestMapping(value = "/dashboard/getCompanyAvgPrice")
     public List<CompPriceBean> getTopCompPrice() throws Exception

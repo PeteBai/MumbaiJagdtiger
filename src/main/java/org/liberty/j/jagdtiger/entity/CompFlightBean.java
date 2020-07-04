@@ -1,19 +1,13 @@
 package org.liberty.j.jagdtiger.entity;
 
 public class CompFlightBean {
-    private String company;
     private String ct;
     public Integer count;
     public CompFlightBean(){}
-    public CompFlightBean(String pCompany, String pCt, Integer pCount)
+    public CompFlightBean(String pCt, Integer pCount)
     {
-        this.company = pCompany;
         this.ct = pCt;
         this.count = pCount;
-    }
-    public String getCompany()
-    {
-        return company;
     }
     public String getCt()
     {
@@ -22,9 +16,6 @@ public class CompFlightBean {
     public Integer getCount()
     {
         return count;
-    }
-    public void setCompany(String pCompany){
-        this.company = pCompany;
     }
     public void setCt(String pCt)
     {

@@ -15,6 +15,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
     public Result exceptionHandler(Exception e) {
+        e.printStackTrace();
         return Result.otherError(ErrorEnum.INTERNAL_SERVER_ERROR);
     }
 }

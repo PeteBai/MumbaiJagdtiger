@@ -13,7 +13,7 @@ public class Result<T> {
 
     }
     //自定义返回结果的构造方法
-    public Result(Boolean success,Integer code, String msg,T data) {
+    public Result(Boolean success,Integer code, String msg, T data) {
         this.success = success;
         this.code = code;
         this.msg = msg;

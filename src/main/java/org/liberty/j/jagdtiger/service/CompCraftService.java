@@ -15,4 +15,9 @@ public class CompCraftService {
     {
         return ccm.getAllCCB();
     }
+    public List<CompCraftBean> queryCompanyCC(String co) throws Exception
+    {
+        //System.out.println(co);
+        return ccm.getCompanyCCB(co);
+    }
 }

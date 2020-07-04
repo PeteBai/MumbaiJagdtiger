@@ -15,4 +15,8 @@ public class CompFlightService {
     {
         return cfm.getAllCF();
     }
+    public List<CompFlightBean> queryCityByCompany(String co) throws Exception
+    {
+        return cfm.getQueryCity(co);
+    }
 }

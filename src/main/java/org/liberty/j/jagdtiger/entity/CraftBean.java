@@ -1,15 +1,15 @@
 package org.liberty.j.jagdtiger.entity;
 
 public class CraftBean {
-    private String craftModelAKA;
+    private String craftFamily;
     private String craftDesc;
 
-    public String getCraftModelAKA() {
-        return craftModelAKA;
+    public String getCraftFamily() {
+        return craftFamily;
     }
 
-    public void setCraftModelAKA(String craftModelAKA) {
-        this.craftModelAKA = craftModelAKA;
+    public void setCraftFamily(String craftFamily) {
+        this.craftFamily = craftFamily;
     }
 
 

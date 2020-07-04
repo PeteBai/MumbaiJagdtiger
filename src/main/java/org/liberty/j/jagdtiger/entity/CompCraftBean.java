@@ -2,7 +2,7 @@ package org.liberty.j.jagdtiger.entity;
 
 public class CompCraftBean {
     private String craftFamily;
-    private String craftModelAKA;
+    private String craftCompany;
     private Integer num;
 
     public String getCraftFamily() {
@@ -13,12 +13,12 @@ public class CompCraftBean {
         this.craftFamily = craftFamily;
     }
 
-    public String getCraftModelAKA() {
-        return craftModelAKA;
+    public String getCraftCompany() {
+        return craftCompany;
     }
 
-    public void setCraftModelAKA(String craftModelAKA) {
-        this.craftModelAKA = craftModelAKA;
+    public void setCraftCompany(String craftCompany) {
+        this.craftCompany = craftCompany;
     }
 
     public Integer getNum() {

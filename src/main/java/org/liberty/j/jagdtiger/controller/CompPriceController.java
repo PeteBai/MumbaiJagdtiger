@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CompPriceController {
     @Autowired
     private CompPriceService cps;
-    @RequestMapping(value="/flight/getTotalPrice")
+    @RequestMapping(value="/flight/getTotalPriceXZ")
     public List<CompPriceBean> getCAPMsg() throws Exception
     {
         List<CompPriceBean> cpbs = cps.queryAllCP();

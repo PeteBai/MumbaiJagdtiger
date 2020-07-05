@@ -9,8 +9,8 @@ import org.liberty.j.jagdtiger.entity.CompCraftBean;
 
 @Mapper
 public interface CompCraftMapper {
-    @Select("select * from company_craft, aircraft where company_craft.craftModel = aircraft.craftModel")
+    @Select("select * from comp_craft, aircraft where comp_craft.craftModel = aircraft.craftModel")
     List<CompCraftBean> getAllCCB();
-    @Select("select distinct company_craft.num, company_craft.craftFamily, aircraft.craftCompany from company_craft, aircraft where company_craft.craftFamily = aircraft.craftFamily and company_craft.comp_code=#{co} order by aircraft.craftCompany, company_craft.craftFamily")
+    @Select("select distinct comp_craft.num, comp_craft.craftFamily, aircraft.craftCompany from comp_craft, aircraft where comp_craft.craftFamily = aircraft.craftFamily and comp_craft.comp_code=#{co} order by aircraft.craftCompany, comp_craft.craftFamily")
     List<CompCraftBean> getCompanyCCB(@Param("co") String co);
 }

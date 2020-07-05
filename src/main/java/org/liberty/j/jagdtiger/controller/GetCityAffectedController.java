@@ -33,7 +33,7 @@ public class GetCityAffectedController {
             m.put("海口","海南"); m.put("长春","吉林"); m.put("乌鲁木齐","新疆");m.put("南宁","广西");m.put("北京","陕西");
             m.put("广州","广东"); m.put("武汉","湖北");
             province = m.get(city);
-            System.out.println(province);
+            //System.out.println(province);
             re.setSuccess(true);
             re.setCode(200);
             List<GetCityAffectedBean> list = getCityAffectedService.queryCityAffected(province);

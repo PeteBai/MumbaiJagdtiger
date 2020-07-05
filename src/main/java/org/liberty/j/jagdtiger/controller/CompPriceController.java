@@ -5,15 +5,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.liberty.j.jagdtiger.Exception.Result;
 import org.liberty.j.jagdtiger.entity.CompDescBean;
 import org.liberty.j.jagdtiger.entity.CompPriceBean;
 import org.liberty.j.jagdtiger.service.CompDescService;
 import org.liberty.j.jagdtiger.service.CompPriceService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin
 public class CompPriceController {
     @Autowired
     private CompPriceService cps;
@@ -24,11 +27,12 @@ public class CompPriceController {
         return cpbs;
     }
     @RequestMapping(value = "/dashboard/getCompanyAvgPrice")
-    public List<CompPriceBean> getTopCompPrice() throws Exception
+    public Result getTopCompPrice() throws Exception
     {
         List<CompPriceBean> cpbs = cps.queryAllCP();
         List<CompPriceBean> temp = cpbs.subList(cpbs.size()-15, cpbs.size());
         Collections.reverse(temp);
-        return temp;
+        Result r = new Result<>(true, 200, "", temp);
+        return r;
     }
 }

@@ -4,13 +4,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.liberty.j.jagdtiger.Exception.Result;
 import org.liberty.j.jagdtiger.entity.CompDescBean;
 import org.liberty.j.jagdtiger.service.CompDescService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin
 public class CompTotalFlightCountController {
     @Autowired
     private CompDescService cds;
@@ -20,7 +23,7 @@ public class CompTotalFlightCountController {
         return cds.queryAllCD();
     }
     @RequestMapping(value = "/dashboard/getCompanyFlightCount")
-    public List<CompCount> getCompCount() throws Exception
+    public Result getCompCount() throws Exception
     {
         List<CompDescBean> cdbs = cds.queryAllCD();
         List<CompCount> ret = new ArrayList<>();
@@ -29,7 +32,8 @@ public class CompTotalFlightCountController {
         }
         Collections.sort(ret);
         ret = ret.subList(0, 6);
-        return ret;
+        Result r = new Result<>(true, 200, "", ret);
+        return r;
     }
 }
 

@@ -1,6 +1,7 @@
 package org.liberty.j.jagdtiger.service;
 
 
+import org.liberty.j.jagdtiger.entity.FlightBean;
 import org.liberty.j.jagdtiger.entity.FlightTenDayBean;
 import org.liberty.j.jagdtiger.mapper.FlightTenDayMapper;
 import org.springframework.beans.factory.annotation.Autowired;

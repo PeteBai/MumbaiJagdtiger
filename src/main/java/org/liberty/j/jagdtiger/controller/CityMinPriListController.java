@@ -4,10 +4,7 @@ package org.liberty.j.jagdtiger.controller;
 //import net.sf.json.JSONObject;
 import org.liberty.j.jagdtiger.Exception.Result;
 import org.liberty.j.jagdtiger.entity.CityMinPriListBean;
-import org.liberty.j.jagdtiger.entity.FlightBean;
-import org.liberty.j.jagdtiger.service.CityLineNumService;
 import org.liberty.j.jagdtiger.service.CityMinPriListService;
-import org.liberty.j.jagdtiger.service.FlightService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.alibaba.fastjson.JSONObject;
@@ -19,7 +16,7 @@ import java.util.List;
 @CrossOrigin
 public class CityMinPriListController {
 
-    public String city = new String("{'BJS': '北京', 'CGQ': '长春', 'CKG': '重庆', " +
+    public String city = "{'BJS': '北京', 'CGQ': '长春', 'CKG': '重庆', " +
             "'CSX': '长沙', 'CTU': '成都', 'DLC': '大连', 'FOC': '福州', " +
             "'CAN': '广州', 'KWE': '贵阳', 'KWL': '桂林', 'HAK': '海口', 'HET': " +
             "'呼和浩特', 'HFE': '合肥', 'HGH': '杭州', 'HRB': '哈尔滨', 'TNA': '济南', " +
@@ -27,7 +24,7 @@ public class CityMinPriListController {
             " 'NNG': '南宁', 'JJN': '泉州', 'TAO': '青岛', 'SHA': '上海', 'SHE': '沈阳'," +
             " 'SJW': '石家庄', 'SYX': '三亚', 'SZX': '深圳', 'TSN': '天津', 'TYN': '太原'," +
             " 'URC': '乌鲁木齐', 'WNZ': '温州', 'WUH': '武汉', 'WUX': '无锡', 'SIA': '西安', " +
-            "'XMN': '厦门', 'XNN': '西宁', 'INC': '银川', 'YTY': '扬州', 'CGO': '郑州', 'ZUH': '珠海'}");
+            "'XMN': '厦门', 'XNN': '西宁', 'INC': '银川', 'YTY': '扬州', 'CGO': '郑州', 'ZUH': '珠海'}";
 
     @Autowired
     private CityMinPriListService cmpls;
@@ -35,7 +32,7 @@ public class CityMinPriListController {
     public Result getCityAvgPrices(@RequestParam String dep,@RequestParam String arr, @RequestParam String start,@RequestParam String end) throws Exception {
         JSONObject to_city = JSONObject.parseObject(city);
         //System.out.println(to_city);
-
+        
         String dep_ct = to_city.get(dep).toString();
         String arr_ct = to_city.get(arr).toString();
         System.out.println(dep_ct+' '+arr_ct);

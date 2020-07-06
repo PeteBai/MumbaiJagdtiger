@@ -33,7 +33,7 @@ public class FlightTenDayController {
     public Result getCityFlightPrice(@RequestParam String city) throws Exception {
         JSONObject to_city = JSONObject.parseObject(id_to_city);
         String ct = to_city.get(city).toString();
-        //System.out.println(ct);
+        System.out.println(ct);
 
         FlightTenDayBean l = fts.getTenday(ct);
 

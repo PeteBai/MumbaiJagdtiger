@@ -1,12 +1,12 @@
 package org.liberty.j.jagdtiger.service;
 
 
-import java.util.List;
-
-import org.liberty.j.jagdtiger.mapper.CityAvgPriceMapper;
 import org.liberty.j.jagdtiger.entity.CityAvgPriceBean;
+import org.liberty.j.jagdtiger.mapper.CityAvgPriceMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class CityAvgPriceService {

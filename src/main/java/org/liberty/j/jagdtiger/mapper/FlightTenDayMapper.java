@@ -12,7 +12,7 @@ import java.util.List;
 @Mapper
 public interface FlightTenDayMapper {
 
-    @Select("select min_price_list from flight_tenday_data where city = #{ct}")
+    @Select("select min_price_list from city_tenday_data where city = #{ct}")
     FlightTenDayBean getTenday(@Param("ct") String ct);
 
 }

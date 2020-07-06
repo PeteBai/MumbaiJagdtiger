@@ -14,7 +14,7 @@ public class FlightService {
     @Autowired
     private FlightMapper fm;
     public List<FlightBean> getFlight(String depct,String arrct)throws Exception{
-        System.out.println(depct+"---"+arrct);
+        //System.out.println(depct+"---"+arrct);
         return fm.getFlight(depct,arrct);
     }
 }

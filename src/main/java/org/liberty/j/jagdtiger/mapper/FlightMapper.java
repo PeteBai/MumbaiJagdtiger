@@ -10,6 +10,6 @@ import java.util.List;
 
 @Mapper
 public interface FlightMapper {
-    @Select("select line from flightprice_data where dep_ct = #{depct} and arr_ct = #{arrct}")
+    @Select("select line from ctoc_flight_price where dep_ct = #{depct} and arr_ct = #{arrct}")
     List<FlightBean> getFlight(@Param("depct") String depct, @Param("arrct") String arrct);
 }

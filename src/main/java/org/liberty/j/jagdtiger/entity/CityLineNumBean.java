@@ -1,24 +1,27 @@
 package org.liberty.j.jagdtiger.entity;
 
 public class CityLineNumBean {
-    private String city;
-    private int sum_dep_arr;
+    private String date;
+    private String linumlist;
+    public CityLineNumBean(String date,String linumlist){
+        this.date = date;
+        this.linumlist = linumlist;
+    }
+    public CityLineNumBean(){}
 
-
-    public String getCity() {
-        return city;
+    public String getDateId() {
+        return date;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public String getJsonStr() {
+        return linumlist;
     }
 
-    public int getSum_dep_arr() {
-        return sum_dep_arr;
+    public void setDateId(String date) {
+        this.date = date;
     }
 
-    public void setSum_dep_arr(int sum_dep_arr) {
-        this.sum_dep_arr = sum_dep_arr;
+    public void setJsonStr(String jsonStr) {
+        this.linumlist = linumlist;
     }
-
 }

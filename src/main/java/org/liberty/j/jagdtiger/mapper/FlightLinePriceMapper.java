@@ -9,7 +9,7 @@ import org.liberty.j.jagdtiger.entity.FlightLinePriceBean;
 
 @Mapper
 public interface FlightLinePriceMapper {
-    @Select("select price_list from flightprice_data where dep_ct = #{depct} and arr_ct = #{arrct} and line = #{flightid}")
+    @Select("select price_list from ctoc_flight_price where dep_ct = #{depct} and arr_ct = #{arrct} and line = #{flightid}")
     FlightLinePriceBean getFPL(@Param("depct") String depct, @Param("arrct") String arrct, @Param("flightid") String flightid);
 
 

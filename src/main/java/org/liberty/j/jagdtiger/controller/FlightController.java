@@ -40,7 +40,7 @@ public class FlightController {
 
         List<FlightBean> l = fs.getFlight(dep_ct,arr_ct);
         List<String> ret = new ArrayList<>();
-        //System.out.println(l.size());
+        System.out.println(l.size());
         for (int i = 0;i < l.size();i++){
 
 

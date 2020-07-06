@@ -7,11 +7,11 @@ import org.liberty.j.jagdtiger.entity.GetCityAffectedBean;
 
 @Mapper
 public interface GetCityAffectedMapper {
-    @Select("select dateId,confirmedCount from coviddata where (dateId = \"2020-01-25\" or " +
-            "dateId = \"2020-02-05\" or dateId = \"2020-02-15\" or dateId = \"2020-02-25\" or " +
-            "dateId = \"2020-03-05\" or dateId = \"2020-03-15\" or dateId = \"2020-03-25\" or " +
-            "dateId = \"2020-04-05\" or dateId = \"2020-04-15\" or dateId = \"2020-04-25\" or " +
-            "dateId = \"2020-05-05\" or dateId = \"2020-05-15\" or dateId = \"2020-05-25\" or " +
-            "dateId = \"2020-06-05\" or dateId = \"2020-06-15\") and provinceShortName = #{province}")
+    @Select("select dateId,confirmedCount from coviddata where (dateId = \"2020-01-30\" or " +
+            "dateId = \"2020-02-10\" or dateId = \"2020-02-20\" or dateId = \"2020-02-29\" or " +
+            "dateId = \"2020-03-10\" or dateId = \"2020-03-20\" or dateId = \"2020-03-30\" or " +
+            "dateId = \"2020-04-10\" or dateId = \"2020-04-20\" or dateId = \"2020-04-30\" or " +
+            "dateId = \"2020-05-10\" or dateId = \"2020-05-20\" or dateId = \"2020-05-30\" or " +
+            "dateId = \"2020-06-10\" or dateId = \"2020-06-17\") and provinceShortName = #{province}")
     List<GetCityAffectedBean> getCityAffectedNum(@Param("province") String province);
 }

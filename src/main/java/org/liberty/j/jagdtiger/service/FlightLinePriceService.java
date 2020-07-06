@@ -2,6 +2,7 @@ package org.liberty.j.jagdtiger.service;
 
 import org.liberty.j.jagdtiger.entity.FlightLinePriceBean;
 import org.liberty.j.jagdtiger.mapper.FlightLinePriceMapper;
+import org.liberty.j.jagdtiger.mapper.FlightMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -25,7 +25,7 @@ public class CityAvgPriceController {
     @Autowired
     private CityAvgPriceService caps;
 
-    @RequestMapping(value = "/city/getCityAvgPrice")
+    @RequestMapping(value = "/city/getCityAvgPrice_tsts")
     public List<CityAvgPriceBean> getCAPMsg() throws Exception{
         return caps.queryCAPM();
     }
@@ -55,12 +55,10 @@ public class CityAvgPriceController {
             tdep.put("price",t.getAvg_arr_price());
             dep.add(tdep);
         }
-
-
         JSONObject ret = new JSONObject();
         ret.put("dep",dep);
         ret.put("arr",arr);
-        System.out.println(ret);
+        //System.out.println(ret);
         Result r = new Result<>(true, 200, "", ret);
         return r;
     }

@@ -44,10 +44,14 @@ public class FlightLinePriceController {
         String q_flight = flightNum;
 
         FlightLinePriceBean l = flps.getFlightLinePriceList(dep_ct,arr_ct,q_flight);
+        //System.out.println("------------------------------------");
 
         String ret = l.getPrice_list();
+        //System.out.println(ret);
 
         int len = ret.length();
+        //System.out.println(len);
+
         String t =  ret.substring(2,len-2);
 
         List<JSONObject> Ans = new ArrayList<JSONObject>();

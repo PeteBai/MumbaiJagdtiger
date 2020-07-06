@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:8080/company/getCompanyTime" method="post">
+        <input type="text" name="companyList" id="okk" >
+        <button type="submit">kk</button>
+    </form>
+</body>
+</html>
+<script src="https://unpkg.com/axios/dist/axios.min.js">
+
+
+</script>
+
+<script>
+    console.log("kk")
+        var companyList = ["南方航空", "中国国际航空"]
+        axios.post("http://192.168.1.185:8080" + "/company/getCompanyTime", { companyList }).then((res) => {
+        })
+</script>

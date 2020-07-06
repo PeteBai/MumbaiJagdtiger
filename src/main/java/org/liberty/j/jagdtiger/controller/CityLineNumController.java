@@ -13,13 +13,8 @@ import java.util.List;
 @CrossOrigin
 public class CityLineNumController {
 
-
     @Autowired
     private CityLineNumService clns;
-
-
-
-
 
     @RequestMapping(value = "/city/getCityLineNum", method = RequestMethod.GET)
     public Result getCityAvgPrices(@RequestParam String month) throws Exception {

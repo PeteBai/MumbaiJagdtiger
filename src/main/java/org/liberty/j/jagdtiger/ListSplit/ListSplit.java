@@ -49,6 +49,6 @@ public class ListSplit {
         oldList.add(t5);
         oldList.add(t6);
         List<List<GetProvinceConfirmedBean>> newList = splitList(oldList);
-        System.out.println(newList);
+        //System.out.println(newList);
     }
 }

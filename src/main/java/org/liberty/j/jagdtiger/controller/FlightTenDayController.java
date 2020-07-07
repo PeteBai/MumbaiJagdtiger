@@ -40,7 +40,7 @@ public class FlightTenDayController {
         String ret = l.getMin_price_list();
 
         int len = ret.length();
-        String t =  ret.substring(2,len-2);
+        String t =  ret.substring(0,len-2);
 
         List<JSONObject> Ans = new ArrayList<JSONObject>();
         String [] splt = t.split(",");

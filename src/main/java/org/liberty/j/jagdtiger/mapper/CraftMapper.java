@@ -8,6 +8,6 @@ import org.liberty.j.jagdtiger.entity.CraftBean;
 
 @Mapper
 public interface CraftMapper {
-    @Select("select craftFamily, craftDesc from aircraft")
+    @Select("select craftFamily, craftSize, craftLoad, craftDesc from aircraft")
     List<CraftBean> getAllCB();
 }

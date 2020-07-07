@@ -52,7 +52,7 @@ public class CityAvgPriceController {
             CityAvgPriceBean t = l.get(i);
             JSONObject tdep = new JSONObject();
             tdep.put("city",t.getCity());
-            tdep.put("price",t.getAvg_arr_price());
+            tdep.put("price",t.getAvg_dep_price());
             dep.add(tdep);
         }
         JSONObject ret = new JSONObject();

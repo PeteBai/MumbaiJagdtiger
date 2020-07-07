@@ -24,7 +24,7 @@ public class GetProvinceConfirmedController {
     private GetProvinceConfirmedService getProvinceConfirmedService;
     @Autowired
     private CityLineNumService cityLineNumService;
-    @RequestMapping(value = "/wdnmd")
+    @RequestMapping(value = "/corona/linenum")
     public Result getProvinceConfirmedMsg(){
         Result re = new Result();
         Map response  = new HashMap();

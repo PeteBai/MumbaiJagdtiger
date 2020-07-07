@@ -37,7 +37,7 @@ public class GetCityAffectedController {
         re.setSuccess(true);
         re.setCode(200);
         List<GetCityAffectedBean> list = getCityAffectedService.queryCityAffected(province);
-        list.get(list.size() - 1).setDateId("2020-6-20");
+        //list.get(list.size() - 1).setDateId("2020-6-20");
         re.setData(list);
         }
         catch(Exception e){

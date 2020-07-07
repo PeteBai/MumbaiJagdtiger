@@ -8,6 +8,6 @@ import java.util.List;
 
 @Mapper
 public interface GetProvinceConfirmedMapper {
-    @Select("select dateId,confirmedCount,provinceShortName as province from coviddata where dateId >= \"2020-03-13\"  and dateId <= \"2020-04-14\" order by dateId")
+    @Select("select dateId,confirmedCount,provinceShortName as province from coviddata where dateId >= \"2020-01-25\" and dateId <= \"2020-06-15\" order by dateId")
     List<GetProvinceConfirmedBean> getProvinceConfirmed();
 }

@@ -4,6 +4,8 @@ package org.liberty.j.jagdtiger.controller;
 import com.alibaba.fastjson.JSONObject;
 import org.liberty.j.jagdtiger.Exception.Result;
 import org.liberty.j.jagdtiger.entity.FlightBean;
+import org.liberty.j.jagdtiger.entity.FlightByDateBean;
+import org.liberty.j.jagdtiger.service.FlightByDateService;
 import org.liberty.j.jagdtiger.service.FlightService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -28,6 +30,8 @@ public class FlightController {
 
     @Autowired
     private FlightService fs;
+    @Autowired
+    private FlightByDateService fbds;
 
     @RequestMapping(value = "/flight/getCityToCityFlights",method = RequestMethod.GET)
     public Result getCityFlight(@RequestParam String dep_city, @RequestParam String arr_city) throws Exception {
@@ -54,6 +58,10 @@ public class FlightController {
         Result r = new Result<>(true, 200, "", ret);
         return r;
     }
-
-
+    @RequestMapping(value = "/flight/getFlightTotalNumByDay")
+    public Result getFlightTotalNumByDay() throws Exception
+    {
+        Result r = new Result<>(true, 200, "", fbds.getFlightTotalNumByDay());
+        return r;
+    }
 }

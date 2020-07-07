@@ -22,7 +22,7 @@ public class CompTimeService {
             CompTimeBean ctb = new CompTimeBean();
             if (j < x.size()) {
                 ctb = x.get(j);
-                System.out.println("j: " + j + ", clk: " + ctb.getClock() + ", size: " + sz.toString(sz));
+                //System.out.println("j: " + j + ", clk: " + ctb.getClock() + ", size: " + sz.toString(sz));
                 Integer hr = 0;
                 if (ctb.getClock().charAt(0) == '0') {
                     hr = Integer.parseInt(ctb.getClock().substring(1));
@@ -42,9 +42,9 @@ public class CompTimeService {
                     x.add(j, temp);
                     j = j - 1;
                 }
-                for (CompTimeBean ctbcc : x) {
-                    System.out.println(ctbcc.getCompany() + " : " + ctbcc.getClock() + " - " + ctbcc.getLineNum());
-                }
+                // for (CompTimeBean ctbcc : x) {
+                //     System.out.println(ctbcc.getCompany() + " : " + ctbcc.getClock() + " - " + ctbcc.getLineNum());
+                // }
             } else {
                 //System.out.println("j: " + j + ", clk: " + ctb.getClock() + ", size: " + sz.toString(sz));
                 CompTimeBean temp = new CompTimeBean();
@@ -70,7 +70,7 @@ public class CompTimeService {
             CompTimeBean ctb = new CompTimeBean();
             if (j < x.size()) {
                 ctb = x.get(j);
-                System.out.println("j: " + j + ", clk: " + ctb.getClock() + ", size: " + sz.toString(sz));
+                //System.out.println("j: " + j + ", clk: " + ctb.getClock() + ", size: " + sz.toString(sz));
                 Integer hr = 0;
                 if (ctb.getClock().charAt(0) == '0') {
                     hr = Integer.parseInt(ctb.getClock().substring(1));

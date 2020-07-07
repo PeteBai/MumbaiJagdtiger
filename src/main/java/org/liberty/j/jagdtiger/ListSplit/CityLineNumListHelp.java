@@ -44,7 +44,7 @@ public class CityLineNumListHelp {
             }
             //对同一天中的数据计算size
             for(CityLineNumSizeBean item2:CityLineNumSizePerDay){
-                item2.setSize(20 * (item2.getLinenum() - min)/(max - min) + 10);
+                item2.setSize(30 * (item2.getLinenum() - min)/(max - min) + 10);
             }
             newList.add(CityLineNumSizePerDay);
         }

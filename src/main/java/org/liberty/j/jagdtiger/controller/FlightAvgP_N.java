@@ -14,18 +14,18 @@ public class FlightAvgP_N {
 
 
     public String msg[] = {
-            " {'month': '01', 'sum_dep_arr': 516996, 'avg_arr_price': 1148.33}" ,
-            " {'month': '02', 'sum_dep_arr': 212844, 'avg_arr_price': 1030.16}" ,
-            " {'month': '03', 'sum_dep_arr': 344908, 'avg_arr_price': 651.91}" ,
-            " {'month': '04', 'sum_dep_arr': 298806, 'avg_arr_price': 637.33}" ,
-            " {'month': '05', 'sum_dep_arr': 331352, 'avg_arr_price': 547.95}" ,
-            " {'month': '06', 'sum_dep_arr': 446988, 'avg_arr_price': 512.52}" ,
-            " {'month': '07', 'sum_dep_arr': 549283, 'avg_arr_price': 1020.82}" ,
-            " {'month': '08', 'sum_dep_arr': 521224, 'avg_arr_price': 1200.85}" ,
-            " {'month': '09', 'sum_dep_arr': 682952, 'avg_arr_price': 845.36}" ,
-            " {'month': '10', 'sum_dep_arr': 533777, 'avg_arr_price': 909.0}" ,
-            " {'month': '11', 'sum_dep_arr': 508787, 'avg_arr_price': 805.0}" ,
-            " {'month': '12', 'sum_dep_arr': 523050, 'avg_arr_price': 763.31}"
+            " {'month': '2020-01', 'sum_dep_arr': 516996, 'avg_arr_price': 1148.33}" ,
+            " {'month': '2020-02', 'sum_dep_arr': 212844, 'avg_arr_price': 1030.16}" ,
+            " {'month': '2020-03', 'sum_dep_arr': 344908, 'avg_arr_price': 651.91}" ,
+            " {'month': '2020-04', 'sum_dep_arr': 298806, 'avg_arr_price': 637.33}" ,
+            " {'month': '2020-05', 'sum_dep_arr': 331352, 'avg_arr_price': 547.95}" ,
+            " {'month': '2020-06', 'sum_dep_arr': 446988, 'avg_arr_price': 512.52}"
+//            " {'month': '07', 'sum_dep_arr': 549283, 'avg_arr_price': 1020.82}" ,
+//            " {'month': '08', 'sum_dep_arr': 521224, 'avg_arr_price': 1200.85}" ,
+//            " {'month': '09', 'sum_dep_arr': 682952, 'avg_arr_price': 845.36}" ,
+//            " {'month': '10', 'sum_dep_arr': 533777, 'avg_arr_price': 909.0}" ,
+//            " {'month': '11', 'sum_dep_arr': 508787, 'avg_arr_price': 805.0}" ,
+//            " {'month': '12', 'sum_dep_arr': 523050, 'avg_arr_price': 763.31}"
     };
 
     public String tim[] = {

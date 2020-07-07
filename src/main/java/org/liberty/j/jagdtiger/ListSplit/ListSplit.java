@@ -20,7 +20,7 @@ public class ListSplit {
             }
             else if(date.equals(item.getDateId())){
                 tempList.get(i).add(item);
-                System.out.println(item.getDateId());
+                //System.out.println(item.getDateId());
             }
             //遍历到了新一天的数据
             else{

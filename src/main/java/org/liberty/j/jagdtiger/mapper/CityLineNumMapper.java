@@ -6,6 +6,6 @@ import org.liberty.j.jagdtiger.entity.CityLineNumBean;
 
 @Mapper
 public interface CityLineNumMapper {
-    @Select("select date,linumlist from city_flightnum_byday order by date")
+    @Select("select date,linumlist from city_flightnum_byday where date >= \"01-25\" and date <= \"06-15\" order by date")
     List<CityLineNumBean> getCityAffectedNum();
 }

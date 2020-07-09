@@ -52,7 +52,7 @@ public class FlightLinePriceController {
         int len = ret.length();
         //System.out.println(len);
 
-        String t =  ret.substring(0,len-2);
+        String t =  ret.substring(0,len-1);
 
         List<JSONObject> Ans = new ArrayList<JSONObject>();
         String [] splt = t.split(",");
